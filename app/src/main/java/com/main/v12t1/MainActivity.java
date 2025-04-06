@@ -1,5 +1,3 @@
-// AI used to solve problems with features and create logs to follow the state of the app.
-
 package com.main.v12t1;
 
 import android.content.Intent;
