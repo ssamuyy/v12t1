@@ -38,12 +38,3 @@ dependencies {
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
 }
-
-android {
-    defaultConfig {
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-    testOptions {
-        unitTests.includeAndroidResources = true
-    }
-}
