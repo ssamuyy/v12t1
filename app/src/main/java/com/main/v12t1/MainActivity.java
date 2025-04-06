@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button fightMonsterButton = findViewById(R.id.FightMonsterActivityButton);
+        Button fightMonsterButton = findViewById(R.id.FightMonstersActivityButton);
         scoreText = findViewById(R.id.PlayerScoreText);
 
         fightMonsterButton.setOnClickListener(v -> {
