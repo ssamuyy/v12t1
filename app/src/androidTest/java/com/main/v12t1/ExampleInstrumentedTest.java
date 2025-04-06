@@ -8,6 +8,8 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.lang.reflect.Field;
+
 import static org.junit.Assert.*;
 
 /**
@@ -24,4 +26,10 @@ public class ExampleInstrumentedTest {
         assertEquals("com.main.v12t1", appContext.getPackageName());
     }
 
+    @Test
+    public void testResourceIdAccess() throws NoSuchFieldException {
+        // Tarkistaa, että R.id arvo voidaan noutaa dynaamisesti
+        Field field = R.id.class.getDeclaredField("ShowMonsterFragmentButton");
+        assertNotNull(field);
+    }
 }
