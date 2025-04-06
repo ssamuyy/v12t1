@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.ShowMonsterFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/MonsterImage"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/MonsterNameText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/MonsterLifeText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <ImageButton
+        android:id="@+id/AttackMonsterButton"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:src="?attr/actionModeCutDrawable" />
+
+</FrameLayout>
